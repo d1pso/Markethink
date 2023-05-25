@@ -1,0 +1,186 @@
+.services {
+    padding: 100px 0 60px 0;
+    @media screen and (max-width: 860px) {
+        padding: 50px 0 30px 0;
+    }
+    // .services__container
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        column-gap: 10px;
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 50px;
+        }
+    }
+    // .services__content
+    &__content {
+        max-width: 488px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and (max-width: 1040px) {
+            max-width: 370px;
+        }
+        @media screen and (max-width: 860px) {
+            max-width: 335px;
+        }
+        @media screen and (max-width: 440px) {
+            align-items: center;
+        }
+    }
+    // .services__title
+    &__title {
+        margin: 0 0 30px 0;
+
+        font-weight: 700;
+        font-size: 2.625rem;
+        line-height: 1.55;
+
+        letter-spacing: 0.02em;
+
+        color: $color-main;
+        @media screen and (max-width: 1040px) {
+            font-size: 2rem;
+            margin: 0 0 15px 0;
+        }
+        @media screen and (max-width: 860px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 440px) {
+            text-align: center;
+        }
+    }
+    // .services__text
+    &__text {
+        max-width: 424px;
+        margin: 0 0 40px 0;
+
+        font-weight: 400;
+        font-size: 1.375rem;
+        line-height: 1.82;
+
+        color: $color-third;
+        @media screen and (max-width: 1040px) {
+            margin: 0 0 20px 0;
+            max-width: 350px;
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 860px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 0.825rem;
+            text-align: center;
+        }
+    }
+    // .services__button
+    &__button {
+        position: relative;
+        padding: 0 40px 0 0;
+
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 0.85; /* 24/28 */
+        letter-spacing: 0.02em;
+        transition: color .2s ease-in;
+        text-decoration: underline !important;
+
+        color: $color-links;
+        @media screen and (max-width: 860px) {
+            font-size: 1.3rem;
+        }
+        &:hover {
+            color: rgba(163, 185, 56, 0.725);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 24px;
+            height: 24px;
+            transition: right .2s ease-in;
+            background: url('../img/services/Arrow\ -\ Right.svg');
+            background-repeat: no-repeat;
+        }
+        &:hover::after {
+            right: -5px;
+        }
+    }
+    // .services__cards
+    &__cards {
+        display: grid;
+        grid-template-columns: 228px 254px;
+        grid-template-rows: 240px 240px;
+        gap: 80px 90px;
+        @media screen and (max-width: 1040px) {
+            gap: 5px 20px;
+            grid-template-columns: 203px 215px;
+            grid-template-rows: 185px 185px;
+        }
+        @media screen and (max-width: 767.98px) {
+            gap: 20px 60px;
+        }
+        @media screen and (max-width: 550px) {
+            gap: 20px 9px;
+        }
+        @media screen and (max-width: 440px) {
+            grid-template-columns: 235px;
+        }
+        
+    }
+    // .services__card
+    &__card {
+    }
+}
+.card-services {
+    @media screen and (max-width: 440px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    // .card-services__image
+    &__image {
+        margin: 0 0 40px 0;
+        
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+
+        @media screen and (max-width: 1040px) {
+            margin: 0 0 20px 0;
+        }
+    }
+    // .card-services__title
+    &__title {
+        margin: 0 0 25px 0;
+
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 0.85; /* 24/28 */
+
+        color: $color-main;
+        @media screen and (max-width: 1040px) {
+            margin: 0 0 15px 0;
+            font-size: 1.25rem;
+        }
+    }
+    // .card-services__text
+    &__text {
+        font-size: 1.125rem;
+        line-height: 1.78;
+
+        color: $color-third;
+        @media screen and (max-width: 1040px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 440px) {
+            text-align: center;
+        }
+    }
+}

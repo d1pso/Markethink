@@ -1,0 +1,37 @@
+.partners {
+    @media screen and (max-width: 550px) {
+        padding: 20px 0 0 0;
+    }
+    // .partners__container
+    &__container {
+        min-height: 140px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    // .partners__list
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 130px;
+
+        @media screen and (max-width:1040px) {
+            column-gap: 65px;
+        }
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        @media screen and (max-width: 550px) {
+            flex-direction: column;
+        }
+    }
+    // .partners__item
+    &__item {
+    }
+    // .partners__image
+    &__image {
+    }
+}

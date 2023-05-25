@@ -1,0 +1,101 @@
+.network {
+    padding: 60px 0 120px 0;
+    @media screen and (max-width: 767.98px) {
+        padding: 40px 0 50px 0;
+    }
+    // .network__container
+    &__container {
+        display: flex;
+        align-items: center;
+        column-gap: 65px;
+        @media screen and (max-width: 1040px) {
+            column-gap: 30px;
+        }
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+        }
+    }
+    // .network__image
+    &__image {
+        width: 670px;
+        height: 470px;
+        object-fit: cover;
+        @media screen and (max-width: 1040px) {
+            height: 350px;
+            width: 475px;
+        }
+        @media screen and (max-width: 860px) {
+            height: 240px;
+            width: 340px;
+        }
+        @media screen and (max-width: 767.98px) {
+            height: 290px;
+            width: 400px;
+        }
+        @media screen and (max-width: 440px) {
+            height: 210px;
+            width: 300px;
+        }
+    }
+    // .network__content
+    &__content {
+        max-width: 460px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and (max-width: 860px) {
+            max-width: 350px;
+        }
+        @media screen and (max-width: 440px) {
+            align-items: center;
+        }
+    }
+    // .network__title
+    &__title {
+        margin: 0 0 30px 0;
+
+        font-weight: 700;
+        font-size: 2.625rem;
+        line-height: 1.55;
+
+        letter-spacing: 0.02em;
+
+        color: $color-main;
+        @media screen and (max-width: 1040px) {
+            margin: 0 0 20px 0;
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 860px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 440px) {
+            text-align: center;
+        }
+
+    }
+    // .network__text
+    &__text {
+        margin: 0 0 50px 0;
+
+        font-weight: 400;
+        font-size: 1.375rem;
+        line-height: 1.82;
+
+        color: $color-third;
+        @media screen and (max-width: 1040px) {
+            margin: 0 0 25px 0;
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 860px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 440px) {
+            text-align: center;
+        }
+    }
+    // .network__button
+    &__button {
+    }
+}

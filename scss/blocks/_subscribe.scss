@@ -1,0 +1,159 @@
+.subscribe {
+    margin: 60px 0 100px 0;
+    @media screen and (max-width: 767.97px) {
+        margin: 30px 0 50px 0;
+    }
+    // .subscribe__container
+    &__container {
+    }
+    // .subscribe__block
+    &__block {
+        position: relative;
+        min-height: 523px;
+
+        display: flex;
+        align-items: center;
+
+        background: url('../img/subscribe/subscribe\ bg.jpg') center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -109px;
+            width: 217px;
+            height: 265px;
+            background: url('../img/subscribe/decor-1.png');
+            background-repeat: no-repeat;
+            @media screen and (max-width: 767.97px) {
+                left: -155px;
+            }
+            @media screen and (max-width: 440px) {
+                left: -159px;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -27px;
+            right: -106px;
+            width: 401px;
+            height: 491px;
+            background: url('../img/subscribe/decor-2.png');
+            background-repeat: no-repeat;
+            @media screen and (max-width: 1165px) {
+                width: 320px;
+            }
+            @media screen and (max-width: 1040px) {
+                right: -16px;
+                width: 193px;
+            }
+            @media screen and (max-width: 860px) {
+                background: unset;
+            }
+        }
+    }
+    // .subscribe__content
+    &__content {
+        max-width: 770px;
+        padding: 0 0 0 130px;
+        z-index: 5;
+
+        @media screen and (max-width: 767.97px) {
+            padding: 0 0 0 40px;
+        }
+        @media screen and (max-width: 440px) {
+            padding: 0 0 0 10px;
+        }
+    }
+    // .subscribe__title
+    &__title {
+        margin: 0 0 30px 0;
+
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1.72;
+
+        letter-spacing: 0.01em;
+
+        color: $color-accent;
+        @media screen and (max-width: 860px) {
+            font-size: 1.6rem;
+        }
+        @media screen and (max-width: 767.97px) {
+            font-size: 1.3rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 0.8rem;
+        }
+    }
+    // .subscribe__image
+    &__image {
+        margin: 0 0 60px 0;
+
+        width: 264px;
+        height: 42px;
+        @media screen and (max-width: 860px) {
+            margin: 0 0 30px 0;
+        }
+        @media screen and (max-width: 550px) {
+            width: 203px;
+            height: 30px
+        }
+    }
+    // .subscribe__form
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 550px) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    // .subscribe__input
+    &__input {
+        width: 372px;
+        padding: 28px 0 28px 40px;
+
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 0.85; /* 18/21 */
+        letter-spacing: 0.02em;
+
+        color: #14183E;
+
+        background-color: $color-accent;
+        box-shadow: 0px 34px 50px rgba(7, 63, 67, 0.07);
+        border-radius: 192px;
+        &::placeholder {
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 0.85; /* 18/21 */
+            letter-spacing: 0.02em;
+
+            color: #14183E;
+            @media screen and (max-width: 860px) {
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 860px) {
+            width: 270px;
+            font-size: 1rem;
+        }
+    }
+    // .subscribe__button
+    &__button {
+        margin: 0 5px 0 0;
+
+        @media screen and (max-width: 767.97px) {
+            padding: 27px 40px;
+        }
+    }
+}
